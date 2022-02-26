@@ -10,4 +10,10 @@ module.exports = async function (context, req) {
         // status: 200, /* Defaults to 200 */
         body: responseMessage
     };
+
+    module.exports = async function (context, req) {
+        context.res.json({
+            text: name
+        });
+    };
 }
